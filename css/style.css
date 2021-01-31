@@ -65,9 +65,7 @@
 }
 
 .footer{
-    width: 500px;
-    height: 500px;
-    background-image:url("../images/u01.jpg");
+  
 }
 
 
@@ -113,7 +111,7 @@
 }
 
 .p01::after{
-    content:"";
+    content:"...";
     -webkit-animation: pt01 5s infinite; /* Chrome, Safari, Opera */
     animation: pt01 5s infinite;
 }
