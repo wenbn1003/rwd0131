@@ -1,0 +1,164 @@
+.wrappwe{
+    display: block;
+    height: 100vh;
+}
+
+.header{
+    height: 40vh;
+    border-bottom: double 1px rgb(39, 37, 37);
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1)), url("/images/u01.jpg");
+    /* background: linear-gradient(rgba(250, 39, 39, 0.5), rgba(255, 255, 255, 0.1)); 漸層*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+
+}
+
+.header_p{
+    background-clip: text;
+    font-family: "Segoe UI","微軟正黑體",sans-serif;
+    font-weight: bold;
+    font-size: 150px;
+    text-align: center;
+    line-height: 40vh;
+    color: rgb(41, 9, 9);
+    -webkit-text-stroke: 2px #fff;
+  
+}
+
+.header_p:hover{
+    background-clip: text;
+    /* color:transparent;  文字透明 */
+    color: rgb(20, 148, 110);
+}
+
+/* .main::after{
+    content: "大家好";
+} */
+
+
+.cbox01{
+    margin-top: 10px;
+    position: relative;
+}
+
+.mydiv {
+    position: absolute;
+    margin-left: 5px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+    z-index: 5;
+}
+
+.myrad{
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  top: 1%;
+  left: 1%;
+  border-radius:10%;
+  z-index: 50;
+  background: rgb(28, 159, 219);
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    0% {
+        border-left: 0px solid rgb(8, 8, 8);
+        width: 250px;
+        color: red;
+    }
+    50% {
+        border-left: 130px solid rgb(8, 8, 8);
+        width: 250px;
+        color: red;
+    }
+    0% {
+        border-left: 0px solid rgb(8, 8, 8);
+        width: 250px;
+        color: red;
+    }
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0% {
+        border-left: 0px solid rgb(8, 8, 8);
+        width: 250px;
+        color: red;
+    }
+    50% {
+        border-left: 130px solid rgb(8, 8, 8);
+        width: 250px;
+        color: red;
+    }
+    0% {
+        border-left: 0px solid rgb(8, 8, 8);
+        width: 250px;
+        color: red;
+    }
+}
+
+.p01{
+    /* position: fixed; */
+    position: absolute;
+    margin-left: 10px;
+    line-height: 25vh;
+    color: #fff;
+    z-index: 10;
+}
+
+.p01::after{
+    content:"";
+    -webkit-animation: pt01 5s infinite; /* Chrome, Safari, Opera */
+    animation: pt01 5s infinite;
+}
+
+@keyframes pt01 {
+    0% {
+        content: "哈囉~~";
+        /* color: red; */
+    }
+    100% {
+        content: "有人在家嗎~~";
+        /* color: red; */
+    }
+}
+
+@-webkit-keyframes pt01 {
+    0% {
+        content: "哈囉~~";
+        /* color: red; */
+    }
+    100% {
+        content: "有人在家嗎~~";
+        /* color: red; */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header_p{
+        font-size: 115px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header_p{
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .header_p{
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .header_p{
+        font-size: 50px;
+    }
+}
