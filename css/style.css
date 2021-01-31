@@ -64,6 +64,13 @@
   background: rgb(28, 159, 219);
 }
 
+.footer{
+    width: 500px;
+    height: 500px;
+    background-image:url("../images/u01.jpg");
+}
+
+
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
     0% {
